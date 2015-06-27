@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhythm.Staticize.Tests", "Rhythm.Staticize.Tests\Rhythm.Staticize.Tests.csproj", "{BB81F20F-68E2-415B-B885-30DEA4B7CD4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", "{9210C7F1-32B1-4C5B-8D9E-F38C06E96AE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HtmlAgilityPack", "HtmlAgilityPack", "{9B4B0CB9-A03F-4680-AB08-150C30F07AF0}"
+	ProjectSection(SolutionItems) = preProject
+		References\HtmlAgilityPack\HtmlAgilityPack.dll = References\HtmlAgilityPack\HtmlAgilityPack.dll
+		References\HtmlAgilityPack\HtmlAgilityPack.XML = References\HtmlAgilityPack\HtmlAgilityPack.XML
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhythm.Staticize", "Rhythm.Staticize\Rhythm.Staticize.csproj", "{C1EBD5EC-6861-4C79-A954-6B58EC944FF8}"
+EndProject
+Global
+	 
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB81F20F-68E2-415B-B885-30DEA4B7CD4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB81F20F-68E2-415B-B885-30DEA4B7CD4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB81F20F-68E2-415B-B885-30DEA4B7CD4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB81F20F-68E2-415B-B885-30DEA4B7CD4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1EBD5EC-6861-4C79-A954-6B58EC944FF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1EBD5EC-6861-4C79-A954-6B58EC944FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1EBD5EC-6861-4C79-A954-6B58EC944FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1EBD5EC-6861-4C79-A954-6B58EC944FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B4B0CB9-A03F-4680-AB08-150C30F07AF0} = {9210C7F1-32B1-4C5B-8D9E-F38C06E96AE7}
+	EndGlobalSection
+EndGlobal
