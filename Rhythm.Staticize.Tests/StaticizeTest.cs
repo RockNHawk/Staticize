@@ -35,15 +35,24 @@ namespace Rhythm.Staticize
 
             List<KeyValuePair<Uri, String>> pages = new List<KeyValuePair<Uri, string>>(10000);
 
-            // 生成豆瓣小组页面：http://www.douban.com/group/13196/discussion?start=0
+            // 将下面的 URL 生成为 HTML 静态化文件，文件会生成在 bin 下
+            var urls = new[] { 
+                "http://www.zhihu.com/question/25519625",
+                "http://www.zhihu.com/question/27232313",
+                "http://www.zhihu.com/question/31291872",
+                "http://www.zhihu.com/question/31293043",
+                "http://www.zhihu.com/question/31318753",
+                "http://cn.bing.com/",
+                "http://36kr.com/"
+            };
+
             // 需要说明，如果页面内的图片、CSS、JS 采用相对路径 即不含（http://host/），Staticize 能够自动下载并放在文件夹中
             // 但如果是绝对路径，如 http://img3.douban.com/misc/mixed_static/7011201580a8cbed.css ，则是不会下载的。
             {
-                for (int i = 1; i < 100; i += 25)
+                for (int i = 1; i < urls.Length; i++)
                 {
-                    string address = string.Concat("http://www.douban.com/group/13196/discussion?start=0", i);
-                    string outputFile = System.IO.Path.Combine(outputDirectory, string.Concat("shine-discussion-", i.ToString(), ".html"));
-                    pages.Add(new KeyValuePair<Uri, String>(new Uri(address), outputFile));
+                    string outputFile = System.IO.Path.Combine(outputDirectory, string.Concat("zihu-", i.ToString(), ".html"));
+                    pages.Add(new KeyValuePair<Uri, String>(new Uri(urls[i]), outputFile));
                 }
             }
 
